@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  height: calc(100vh - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(27, 66%, 92%);
+}
+
+.price-info {
+  color: white;
+}
+.price-info p {
+  margin: inherit;
+  font-size: smaller;
+  font-weight: 400;
+}
+.price-info h2 {
+  margin: inherit;
+  margin-top: -10px;
+  font-weight: 700;
+}
+
+.container {
+  background-color: transparent;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .top-container {
+  background-color: hsl(10, 79%, 65%);
+  padding: 12px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.container .top-container img {
+  height: 35px;
+}
+.container .bottom-container {
+  background-color: hsl(33, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+.container .bottom-container h2 {
+  color: hsl(25, 47%, 15%);
+  margin-top: -10px;
+  font-weight: 700;
+}
+.container .bottom-container .bar-graph {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.container .bottom-container .bar-graph .bars {
+  position: relative;
+}
+.container .bottom-container .bar-graph .bars svg #background-rect {
+  display: none;
+  fill: hsl(25, 47%, 15%);
+}
+.container .bottom-container .bar-graph .bars svg text {
+  display: none;
+  fill: white;
+  font-weight: 400;
+  font-size: x-small;
+}
+.container .bottom-container .bar-graph .bars svg:hover #background-rect {
+  display: block;
+}
+.container .bottom-container .bar-graph .bars svg:hover text {
+  display: block;
+}
+.container .bottom-container .bar-graph .bars svg rect {
+  cursor: pointer;
+}
+.container .bottom-container .bar-graph .bars svg rect:hover {
+  filter: brightness(125%);
+}
+.container .bottom-container .bar-graph .bars p {
+  text-align: center;
+  margin: 0;
+  margin-top: -12px;
+  font-size: small;
+  color: hsl(28, 10%, 53%);
+}
+.container .bottom-container hr {
+  border: 1px hsl(27, 66%, 92%) solid;
+}
+.container .bottom-container .total {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+}
+.container .bottom-container .total .price-info {
+  color: hsl(25, 47%, 15%);
+}
+.container .bottom-container .total .price-info p {
+  color: hsl(28, 10%, 53%);
+  text-align: left;
+  margin-bottom: -20px;
+}
+.container .bottom-container .total .price-info h1 {
+  margin: inherit;
+}
+.container .bottom-container .total p {
+  color: hsl(28, 10%, 53%);
+  text-align: right;
+  line-height: 20px;
+  font-size: small;
+  margin: 0;
+}
+.container .bottom-container .total p b {
+  color: hsl(25, 47%, 15%);
+}/*# sourceMappingURL=style.css.map */

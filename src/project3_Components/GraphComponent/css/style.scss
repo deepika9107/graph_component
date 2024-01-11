@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
+
+$Soft-red: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very-pale-orange: hsl(33, 100%, 98%);
+
+body {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  height: calc(100vh - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $Cream;
+}
+
+.price-info {
+  color: white;
+  p {
+    margin: inherit;
+    font-size: smaller;
+    font-weight: 400;
+  }
+  h2 {
+    margin: inherit;
+    margin-top: -10px;
+    font-weight: 700;
+  }
+}
+.container {
+  background-color: transparent;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .top-container {
+    background-color: $Soft-red;
+    padding: 12px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    img {
+      height: 35px;
+    }
+  }
+  .bottom-container {
+    background-color: $Very-pale-orange;
+    padding: 20px;
+    border-radius: 10px;
+    h2 {
+      color: $Dark-brown;
+      margin-top: -10px;
+      font-weight: 700;
+    }
+
+    .bar-graph {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+
+      .bars {
+        position: relative;
+
+        svg {
+          #background-rect {
+            display: none;
+            fill: $Dark-brown;
+          }
+          text {
+            display: none;
+            fill: white;
+            font-weight: 400;
+            font-size: x-small;
+          }
+          &:hover {
+            #background-rect {
+              display: block;
+            }
+            text {
+              display: block;
+            }
+          }
+          rect {
+            cursor: pointer;
+            &:hover {
+              filter: brightness(125%);
+            }
+          }
+        }
+        p {
+          text-align: center;
+          margin: 0;
+          margin-top: -12px;
+          font-size: small;
+          color: $Medium-brown;
+        }
+      }
+    }
+    hr {
+      border: 1px $Cream solid;
+    }
+
+    .total {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: last baseline;
+
+      .price-info {
+        color: $Dark-brown;
+        p {
+          color: $Medium-brown;
+          text-align: left;
+          margin-bottom: -20px;
+        }
+        h1 {
+          margin: inherit;
+        }
+      }
+
+      p {
+        b {
+          color: $Dark-brown;
+        }
+        color: $Medium-brown;
+        text-align: right;
+        line-height: 20px;
+        font-size: small;
+        margin: 0;
+      }
+    }
+  }
+}
