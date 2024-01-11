@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/deepika9107/graph_component.git/static/css/main.8efb5153.css",
+    "main.js": "/deepika9107/graph_component.git/static/js/main.f6e8f289.js",
+    "index.html": "/deepika9107/graph_component.git/index.html",
+    "static/media/logo.svg": "/deepika9107/graph_component.git/static/media/logo.99d5b9138a1a64cc6858cdac9a9d3bd4.svg",
+    "main.8efb5153.css.map": "/deepika9107/graph_component.git/static/css/main.8efb5153.css.map",
+    "main.f6e8f289.js.map": "/deepika9107/graph_component.git/static/js/main.f6e8f289.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8efb5153.css",
+    "static/js/main.f6e8f289.js"
+  ]
+}
