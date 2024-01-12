@@ -19,7 +19,6 @@ body {
 }
 .price-info h2 {
   margin: inherit;
-  margin-top: -10px;
   font-weight: 700;
 }
 
@@ -32,11 +31,11 @@ body {
 }
 .container .top-container {
   background-color: hsl(10, 79%, 65%);
-  padding: 12px;
+  padding: 20px;
   padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: last baseline;
   border-radius: 10px;
 }
 .container .top-container img {
@@ -49,7 +48,6 @@ body {
 }
 .container .bottom-container h2 {
   color: hsl(25, 47%, 15%);
-  margin-top: -10px;
   font-weight: 700;
 }
 .container .bottom-container .bar-graph {
@@ -85,7 +83,6 @@ body {
 .container .bottom-container .bar-graph .bars p {
   text-align: center;
   margin: 0;
-  margin-top: -12px;
   font-size: small;
   color: hsl(28, 10%, 53%);
 }
@@ -104,7 +101,6 @@ body {
 .container .bottom-container .total .price-info p {
   color: hsl(28, 10%, 53%);
   text-align: left;
-  margin-bottom: -20px;
 }
 .container .bottom-container .total .price-info h1 {
   margin: inherit;
