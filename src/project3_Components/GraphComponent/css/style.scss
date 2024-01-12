@@ -40,7 +40,6 @@ body {
   .top-container {
     background-color: $Soft-red;
     padding: 20px;
-    padding-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
@@ -106,7 +105,6 @@ body {
     }
 
     .total {
-      margin-top: 20px;
       display: flex;
       justify-content: space-between;
       align-items: last baseline;
